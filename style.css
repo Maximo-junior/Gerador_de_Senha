@@ -1,0 +1,83 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Roboto:wght@100;300;400;500;700;900&family=Source+Sans+Pro&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins";
+  font-size: x-large;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #000000;
+}
+h1 {
+  color: #fff;
+}
+
+label {
+  color: #fff;
+}
+
+main {
+  padding: 20px;
+  box-shadow: 0 0 0 0 #007bff;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  background-color: #01000c;
+  animation: pulse 1s ease-in-out infinite;
+  border-radius: 5px;
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 #007bff;
+  }
+  50% {
+    box-shadow: 0 0 0 5px rgb(255, 0, 119);
+  }
+  100% {
+    box-shadow: 0 0 0 0 #ff6347;
+  }
+}
+
+main > div {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+input {
+  padding: 5px;
+  outline: none;
+  accent-color: rgb(255, 0, 119);
+  border-color: rgb(255, 0, 119);
+}
+
+input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+}
+
+input[type="range"] {
+  width: 90%;
+}
+
+button {
+  background-color: rgb(255, 0, 119);
+  cursor: pointer;
+  color: white;
+  border: none;
+  padding: 5px;
+  border-radius: 3px;
+  transition: 1s;
+}
+
+button:hover {
+  background-color: #ff6347;
+}
